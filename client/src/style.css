@@ -10,28 +10,46 @@
 .banner {
     width: 1440px;
     height: 90px;
-    padding-top: 50px;
+    margin-top: 50px;
     font-size: 34px;
     background-color: #fff5bc;
 }
 .books {
     display: flex;
     gap: 10px;
+    /* background-color: aqua; */
+    height: 70%;
 }
 
 .book {
+    
     flex:1;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-}  
+    /* background-color: bisque; */
+}
+a {
+    text-decoration: none;
+}
 
 img {
  width: 200px;
  height: 300px;
  object-fit: cover;
- background-color: bisque;
+}
+.desc {
+    text-align: justify;
+    white-space: wrap;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .delete {
@@ -42,6 +60,10 @@ img {
     outline: 1px solid rgb(245, 191, 191);
     color: rgb(242, 100, 100);
 }
+.delete:hover {
+    background-color: rgb(242, 100, 100);
+    color: white;
+}
 .update {
     border: none;
     padding: 4px 8px;
@@ -50,6 +72,10 @@ img {
     outline: 1px solid rgb(204, 204, 243);
     color: rgb(139, 139, 234);
 
+}
+.update:hover {
+    background-color:rgb(139, 139, 234);
+    color: white;
 }
 
 .form {
@@ -76,7 +102,7 @@ input {
 }
 .formBtn:hover {
     background-color: rgb(37, 200, 254);
-    
+
 }
 .add {
     background-color: rgb(255, 213, 134);
