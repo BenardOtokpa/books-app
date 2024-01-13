@@ -30,7 +30,7 @@ app.use(cors());
 // Routers ---------------------------------------------------
 //homepage
 app.get("/", (req, res) => {
-  res.json("Welcome to the backend server");
+  res.json("Welcome to the backend Server");
 });
 
 //get all books
